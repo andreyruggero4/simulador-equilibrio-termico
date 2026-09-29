@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Temperatura final do ferro e da água</title>
+<style>
+:root{font-family:system-ui,sans-serif;color:#18293b}*{box-sizing:border-box}body{margin:0;background:#f1f5f9}main{max-width:860px;margin:2rem auto;padding:0 1rem 3rem}h1{font-size:clamp(1.6rem,4vw,2.3rem);margin-bottom:.3rem}.intro{line-height:1.5;color:#43566b}.card{background:white;border:1px solid #d7e2ec;border-radius:14px;padding:1.3rem;margin-top:1.2rem}.visual svg{display:block;width:100%;height:auto}.visual figcaption{text-align:center;color:#52637a;font-size:.9rem;margin-top:.5rem}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}fieldset{border:1px solid #c7d5e2;border-radius:10px;padding:1rem}legend{font-weight:700;padding:0 .4rem}label{display:block;font-weight:600;margin:.8rem 0 .3rem}input{width:100%;border:1px solid #91a6ba;border-radius:7px;padding:.65rem;font:inherit}.unit{font-size:.85rem;color:#52637a}button{margin-top:1rem;background:#175184;color:white;border:0;border-radius:8px;padding:.8rem 1.2rem;font:inherit;font-weight:700;cursor:pointer}button:disabled{opacity:.6;cursor:wait}button:focus-visible,input:focus-visible{outline:3px solid #78b8fc;outline-offset:2px}.error{color:#a01628}.answer{font-size:1.4rem;font-weight:700;margin:.5rem 0}.result{border-left:5px solid #238557}.status{color:#175184;font-weight:700}.atom{animation:vibrar 1.3s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:center}.atom:nth-child(even){animation-delay:-.65s}.molecula{animation:flutuar 2.6s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:center}.molecula:nth-child(even){animation-delay:-1.3s}.animando .atom{animation-duration:.35s}.animando .molecula{animation-duration:.7s}@keyframes vibrar{to{transform:translate(4px,-3px)}}@keyframes flutuar{to{transform:translate(15px,-13px) rotate(18deg)}}@media(max-width:620px){.grid{grid-template-columns:1fr}}@media(prefers-reduced-motion:reduce){.atom,.molecula{animation:none}}
+</style>
+</head>
+<body><main>
+<h1>Temperatura final do ferro e da água</h1>
+<p class="intro">Aqueça ou resfrie cada corpo separadamente. Informe massa, temperatura inicial, calor específico e energia fornecida a cada um. Os resultados mostram duas temperaturas finais independentes.</p>
+<figure class="card visual" aria-labelledby="titulo-figura legenda-figura">
+<h2 id="titulo-figura">Bloco de ferro e recipiente com água</h2>
+<svg viewBox="0 0 760 290" role="img" aria-label="Ilustração de um bloco de ferro e um recipiente com água, com temperaturas iniciais e finais individuais">
+<defs><linearGradient id="metal" x2="1" y2="1"><stop stop-color="#c8d0d6"/><stop offset="1" stop-color="#657b8a"/></linearGradient><linearGradient id="agua" x2="0" y2="1"><stop stop-color="#a9e7fa"/><stop offset="1" stop-color="#348dc7"/></linearGradient></defs>
+<rect x="20" y="20" width="345" height="250" rx="18" fill="#f3f6f8" stroke="#a4b3bf" stroke-width="2"/>
+<text x="193" y="53" text-anchor="middle" font-size="21" font-weight="bold" fill="#334655">Bloco de ferro</text>
+<polygon points="110,119 264,119 285,101 132,101" fill="#cad2d8" stroke="#566c7a" stroke-width="2"/>
+<rect x="110" y="119" width="154" height="84" fill="url(#metal)" stroke="#566c7a" stroke-width="2"/>
+<g fill="#eaf0f3" opacity=".85"><circle class="atom" cx="131" cy="138" r="5"/><circle class="atom" cx="159" cy="138" r="5"/><circle class="atom" cx="187" cy="138" r="5"/><circle class="atom" cx="215" cy="138" r="5"/><circle class="atom" cx="243" cy="138" r="5"/><circle class="atom" cx="131" cy="179" r="5"/><circle class="atom" cx="159" cy="179" r="5"/><circle class="atom" cx="215" cy="179" r="5"/><circle class="atom" cx="243" cy="179" r="5"/></g>
+<polygon points="264,119 285,101 285,185 264,203" fill="#5b6d7b" stroke="#455b68" stroke-width="2"/>
+<text x="188" y="166" text-anchor="middle" font-size="18" fill="white">Fe</text>
+<text id="rotulo-t1" x="193" y="228" text-anchor="middle" font-size="16" fill="#334655">Inicial: —</text>
+<text id="rotulo-f1" x="193" y="250" text-anchor="middle" font-size="17" font-weight="bold" fill="#334655">Final: —</text>
+<rect x="395" y="20" width="345" height="250" rx="18" fill="#effaff" stroke="#8ec9e8" stroke-width="2"/>
+<text x="568" y="53" text-anchor="middle" font-size="21" font-weight="bold" fill="#174d73">Água</text>
+<path d="M480 95 V185 Q480 205 500 205 H636 Q656 205 656 185 V95" fill="white" stroke="#6b9dbb" stroke-width="5"/>
+<path d="M486 132 Q530 124 568 132 Q608 140 650 132 V184 Q650 198 635 198 H501 Q486 198 486 184 Z" fill="url(#agua)"/>
+<g fill="white" opacity=".9"><g class="molecula"><circle cx="511" cy="151" r="6"/><circle cx="501" cy="156" r="3"/><circle cx="520" cy="158" r="3"/></g><g class="molecula"><circle cx="542" cy="181" r="6"/><circle cx="532" cy="186" r="3"/><circle cx="551" cy="188" r="3"/></g><g class="molecula"><circle cx="603" cy="147" r="6"/><circle cx="593" cy="153" r="3"/><circle cx="612" cy="154" r="3"/></g><g class="molecula"><circle cx="625" cy="182" r="6"/><circle cx="615" cy="187" r="3"/><circle cx="634" cy="188" r="3"/></g></g>
+<path d="M486 132 Q530 124 568 132 Q608 140 650 132" fill="none" stroke="#247db4" stroke-width="3"/>
+<text x="568" y="170" text-anchor="middle" font-size="18" fill="#06446c">H₂O</text>
+<text id="rotulo-t2" x="568" y="228" text-anchor="middle" font-size="16" fill="#174d73">Inicial: —</text>
+<text id="rotulo-f2" x="568" y="250" text-anchor="middle" font-size="17" font-weight="bold" fill="#174d73">Final: —</text>
+</svg><figcaption id="legenda-figura">As partículas se movimentam e as temperaturas aparecem ao fim da simulação.</figcaption>
+</figure>
+<form id="formulario" class="card" novalidate><div class="grid">
+<fieldset><legend>Bloco de ferro</legend>
+<label for="m1">Massa <span class="unit">(g)</span></label><input id="m1" inputmode="decimal" required>
+<label for="t1">Temperatura inicial <span class="unit">(°C)</span></label><input id="t1" inputmode="decimal" required>
+<label for="c1">Calor específico <span class="unit">(cal/(g·°C))</span></label><input id="c1" inputmode="decimal" value="0,11" required>
+<label for="q1">Energia fornecida ao ferro <span class="unit">(cal)</span></label><input id="q1" inputmode="decimal" value="0" required>
+</fieldset><fieldset><legend>Água</legend>
+<label for="m2">Massa <span class="unit">(g)</span></label><input id="m2" inputmode="decimal" required>
+<label for="t2">Temperatura inicial <span class="unit">(°C)</span></label><input id="t2" inputmode="decimal" required>
+<label for="c2">Calor específico <span class="unit">(cal/(g·°C))</span></label><input id="c2" inputmode="decimal" value="1" required>
+<label for="q2">Energia fornecida à água <span class="unit">(cal)</span></label><input id="q2" inputmode="decimal" value="0" required>
+</fieldset></div>
+<p class="unit">Os valores de calor específico são aproximados e podem ser editados. Energia negativa representa retirada de calor. O modelo supõe ausência de perdas e de mudança de estado físico.</p>
+<p id="erro" class="error" role="alert" hidden></p><button type="submit">Iniciar simulação</button><p id="status" class="status" role="status" hidden>Partículas em movimento... calculando temperaturas.</p></form>
+<section id="resultado" class="card result" aria-live="polite" hidden><h2>Temperaturas finais</h2>
+<p id="resposta-ferro" class="answer"></p><p id="resposta-agua" class="answer"></p></section>
+</main>
+<script>
+const form=document.querySelector('#formulario');
+const erro=document.querySelector('#erro');
+const resultado=document.querySelector('#resultado');
+const status=document.querySelector('#status');
+const botao=form.querySelector('button');
+const figura=document.querySelector('.visual');
+const formato=new Intl.NumberFormat('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});
+function ler(id){
+  const texto=document.getElementById(id).value.trim().replace(/\s/g,'');
+  if(!/^[+-]?(?:\d+(?:[.,]\d+)?|[.,]\d+)$/.test(texto))return null;
+  const valor=Number(texto.replace(',','.'));
+  return Number.isFinite(valor)?valor:null;
+}
+form.addEventListener('submit',evento=>{
+  evento.preventDefault();erro.hidden=true;resultado.hidden=true;status.hidden=true;
+  const v={};
+  for(const id of ['m1','t1','c1','q1','m2','t2','c2','q2']){
+    v[id]=ler(id);
+    if(v[id]===null){erro.textContent='Preencha todos os campos com números válidos. Use vírgula ou ponto para decimais.';erro.hidden=false;document.getElementById(id).focus();return;}
+  }
+  if([v.m1,v.c1,v.m2,v.c2].some(x=>x<=0)){erro.textContent='Massas e calores específicos devem ser maiores que zero.';erro.hidden=false;return;}
+  const f1=v.t1+v.q1/(v.m1*v.c1),f2=v.t2+v.q2/(v.m2*v.c2);
+  if(!Number.isFinite(f1)||!Number.isFinite(f2)){erro.textContent='Os valores são grandes demais para calcular. Use números menores.';erro.hidden=false;return;}
+  botao.disabled=true;
+  status.hidden=false;
+  figura.classList.add('animando');
+  document.getElementById('rotulo-t1').textContent=`Inicial: ${formato.format(v.t1)} °C`;
+  document.getElementById('rotulo-t2').textContent=`Inicial: ${formato.format(v.t2)} °C`;
+  document.getElementById('rotulo-f1').textContent='Final: calculando...';
+  document.getElementById('rotulo-f2').textContent='Final: calculando...';
+  setTimeout(()=>{
+    document.getElementById('resposta-ferro').textContent=`Ferro: ${formato.format(f1)} °C`;
+    document.getElementById('resposta-agua').textContent=`Água: ${formato.format(f2)} °C`;
+    document.getElementById('rotulo-f1').textContent=`Final: ${formato.format(f1)} °C`;
+    document.getElementById('rotulo-f2').textContent=`Final: ${formato.format(f2)} °C`;
+    figura.classList.remove('animando');
+    status.hidden=true;
+    botao.disabled=false;
+    resultado.hidden=false;
+    resultado.scrollIntoView({behavior:'smooth',block:'nearest'});
+  },2500);
+});
+</script>
+</body></html>
